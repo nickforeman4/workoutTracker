@@ -12,7 +12,7 @@ router.post("/api/workouts", ({ body }, res) => {
         });
 });
 
-router.put("/api/workouts/:id", ({ body }, res) => {
+router.put("/api/workouts/:id", ({ body, params }, res) => {
     Workouts.findByIdAndUpdate(params.id, {
         $push:{exercises: body}
     },{new: true})
@@ -36,7 +36,7 @@ router.get("/api/workouts", (req, res) => {
         });
 });
 
-router.get("/api/workouts", (req, res) => {
+router.get("/api/workouts/range", (req, res) => {
     Workouts.find({}).limit(7)
         .then(dbWorkouts => {
             console.log(dbWorkouts);
