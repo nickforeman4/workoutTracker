@@ -1,7 +1,3 @@
-//var MONGODB_URI = process.env.MONGODB_URI || "mongodb://nickforeman4:Whiting3543@ds127878.mlab.com:27878/heroku_v7kjz0vw";
-
-//mongoose.connect(MONGODB_URI);
-
 const express = require("express");
 const mongoose = require("mongoose");
 
@@ -26,5 +22,3 @@ app.use(require("./routes/htmlRoutes.js"));
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);
 });
-
-//mongodb://localhost/workout
