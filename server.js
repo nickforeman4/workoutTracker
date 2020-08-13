@@ -1,4 +1,4 @@
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://nickforeman4:Whiting3543@ds127878.mlab.com:27878/heroku_v7kjz0vw";
 
 mongoose.connect(MONGODB_URI);
 
